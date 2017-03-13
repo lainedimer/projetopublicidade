@@ -49,8 +49,7 @@ section {
      */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;  
-  }
+  margin: 0.67em 0; }
 
 /* Grouping content
        ========================================================================== */
@@ -244,6 +243,7 @@ textarea {
      */
 button {
   overflow: visible; }
+
 /**
      * Remove the inheritance of text transform in Edge, Firefox, and IE.
      * 1. Remove the inheritance of text transform in Firefox.
@@ -437,7 +437,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #FFFFFF;
+  background: #fefefe;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
@@ -1281,7 +1281,6 @@ p {
   margin-bottom: 1rem;
   font-size: inherit;
   line-height: 1.6;
-  font-family: "Open Sans Condensed";
   text-rendering: optimizeLegibility; }
 
 em,
@@ -1304,9 +1303,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans Condensed", sans-serif,"Helvetica Neue", Helvetica, Arial;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  color: inherit;
   text-rendering: optimizeLegibility; }
   h1 small,
   h2 small,
@@ -1321,15 +1321,13 @@ h1 {
   font-size: 1.5rem;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 0.5rem; 
-  color: #FF6347;}
+  margin-bottom: 0.5rem; }
+
 h2 {
   font-size: 1.25rem;
   line-height: 1.4;
   margin-top: 0;
-  color: #FF0000;
-  margin-bottom: 0.5rem;
-  font-family:'Oleo Script Swash Caps';}
+  margin-bottom: 0.5rem; }
 
 h3 {
   font-size: 1.1875rem;
@@ -1370,14 +1368,12 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  font-family: "Open Sans Condensed";
-  font-size: 1.1875rem;
   line-height: inherit;
-  color:black;
+  color: #1779ba;
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #FF0000; }
+    color: #1468a0; }
   a img {
     border: 0; }
 
@@ -1571,7 +1567,6 @@ kbd {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
-  margin-left: 10px;
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
@@ -2269,8 +2264,7 @@ select {
 
 .menu {
   margin: 0;
-  list-style-type: none;
-  }
+  list-style-type: none; }
   .menu > li {
     display: table-cell;
     vertical-align: middle; }
@@ -2278,7 +2272,7 @@ select {
       outline: 0; }
   .menu > li > a {
     display: block;
-    padding: 2rem 3rem;
+    padding: 0.7rem 1rem;
     line-height: 1; }
   .menu input,
   .menu select,
@@ -3735,7 +3729,7 @@ a.thumbnail {
         transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem;margin-bottom: 50px; }
+  padding: 0.5rem; }
   .top-bar::before, .top-bar::after {
     display: table;
     content: ' '; }
@@ -4384,15 +4378,8 @@ a.thumbnail {
 
 .long-delay {
   animation-delay: 700ms !important; }
-.size-12 { font-size: 12px; }
-.size-14 { font-size: 14px; }
-.size-16 { font-size: 16px; }
-.size-18 { font-size: 18px; }
-.size-21 { font-size: 21px; }
-.size-24 { font-size: 24px; }
-.size-36 { font-size: 36px; }
-.size-48 { font-size: 48px; }
-.size-60 { font-size: 60px; }
-.size-72 { font-size: 72px; }
-.fontCondensed { font-family: "Open Sans Condensed"; color:#696969; text-align: justify; }
-.title{ font-size: 72;}
+.gradient2 {
+  background: -webkit-linear-gradient(#FF0000, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }

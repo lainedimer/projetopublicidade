@@ -7,27 +7,48 @@
     <title>Publicidade</title>
     <link rel="stylesheet" href="stylesheets/foundation.css">
     <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="stylesheet" href="stylesheets/animate.css">
     <link rel="stylesheet" href="icons/foundation-icons.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet"> 
 </head>
 <body>
-	<div class="off-canvas-wrapper">
-	<div class="large-12 columns">
-		<div class="large-3 columns"><a href="#"><h1>Logo<h1></a></div>
-        <ul class="menu align-right">
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">CONTATO</a></li>           	
-            <li><a href="#">PORTIFOLIO</a></li>
-        </ul>
-    </div>
-    <div>
-	<div class="row">
-	    <div class="column align-self-middle">
-	        <h2 class="title">Publicidade</h2>
-	    </div>
-    </div>
-    </div>
+
+	<div class="fixed">
+	<div class="top-bar" style="background-color: inherit;">
+	  <div class="top-bar-left" style="background-color: inherit;">
+	    <ul class="dropdown menu" data-dropdown-menu style="background-color: inherit;">
+	      <li class="menu-text"><a href="#inicial"><img src="logo/logo.png" style="width: 10%; height: 10%"> </a></li>
+	    </ul>
+	    </ul>
+	  </div>
+	  <div class="top-bar-right" style="background-color: inherit;">
+	    <ul class="menu" style="background-color: inherit; font-family: 'Open Sans Condensed';font-size: 24px;">
+	    	<li><a href="#portifolio" class="gradient2">Portifolio</a></li>
+	    	<li><a href="#sobre" class="gradient2">Sobre</a></li>
+	    	<li><a href="#contato" class="gradient2">Contato</a></li>
+	    </ul>
+	  </div>
+	</div>
+	</div>
+	<div id="home" style="margin: 0 auto 0 auto;">
+		<div class="row">
+		<h1 class="gradient2" style="font-family:'Open Sans Condensed';text-align: center; color: #000000; font-size: 80px">Publicidade</h1>
+		</div>
+	</div>
+	<div id="portifolio" style="margin: 0 auto 0 auto; height: 100%; width: 100%">
+		<div class="row">
+			<ul class="orbit-container">
+			  <li class="orbit-slide is-active">
+			    <img class="orbit-image" src="slide/img1.jpg" alt="Space">
+			    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+			  </li>
+			  <!-- More slides... -->
+			</ul>
+		</div>
+	</div>
+    <script src="javascript/jquery.js"></script>
+  	<script src="javascript/foundation.js"></script>
 </body>
 </html>
