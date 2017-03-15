@@ -8,47 +8,40 @@
     <link rel="stylesheet" href="stylesheets/foundation.css">
     <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/animate.css">
+    <link rel="stylesheet" href="stylesheets/costumize.css">
     <link rel="stylesheet" href="icons/foundation-icons.css" media="all">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
+	<div class="off-canvas-wrapper">
 
-	<div class="fixed">
-	<div class="top-bar" style="background-color: inherit;">
-	  <div class="top-bar-left" style="background-color: inherit;">
-	    <ul class="dropdown menu" data-dropdown-menu style="background-color: inherit;">
-	      <li class="menu-text"><a href="#inicial"><img src="logo/logo.png" style="width: 10%; height: 10%"> </a></li>
-	    </ul>
-	    </ul>
-	  </div>
-	  <div class="top-bar-right" style="background-color: inherit;">
-	    <ul class="menu" style="background-color: inherit; font-family: 'Open Sans Condensed';font-size: 24px;">
-	    	<li><a href="#portifolio" class="gradient2">Portifolio</a></li>
-	    	<li><a href="#sobre" class="gradient2">Sobre</a></li>
-	    	<li><a href="#contato" class="gradient2">Contato</a></li>
-	    </ul>
-	  </div>
-	</div>
-	</div>
-	<div id="home" style="margin: 0 auto 0 auto;">
-		<div class="row">
-		<h1 class="gradient2" style="font-family:'Open Sans Condensed';text-align: center; color: #000000; font-size: 80px">Publicidade</h1>
+		<div class="fixed">
+			<div class="fundo-padrao title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+		  		<button class="sanduiche menu-icon" type="button" data-toggle="example-menu"></button>
+		  	<div class="title-bar-title texto-menu"></div>
+			</div>
+
+			<div class="fundo-padrao top-bar" id="example-menu">
+			  <div class="fundo-padrao top-bar-right">
+			    <ul class="fundo-padrao fonte menu">
+			    	<li><a href="#portifolio" class="texto-menu ">Portifolio</a></li>
+			    	<li><a href="#sobre" class="texto-menu ">Sobre</a></li>
+			    	<li><a href="#contato " class="texto-menu ">Contato</a></li>
+			    </ul>
+			  </div>
+			</div>
 		</div>
+
+	
+
 	</div>
-	<div id="portifolio" style="margin: 0 auto 0 auto; height: 100%; width: 100%">
-		<div class="row">
-			<ul class="orbit-container">
-			  <li class="orbit-slide is-active">
-			    <img class="orbit-image" src="slide/img1.jpg" alt="Space">
-			    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-			  </li>
-			  <!-- More slides... -->
-			</ul>
-		</div>
-	</div>
-    <script src="javascript/jquery.js"></script>
-  	<script src="javascript/foundation.js"></script>
+	<!-- <script src="javascript/app.js"></script> -->
+	<script type="text/javascript" src="js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="js/vendor/foundation.js"></script>
+	<script type="text/javascript" src="js/foundation.min.js"></script>
+	<script>
+    	$(document).foundation();
+  	</script>
 </body>
 </html>

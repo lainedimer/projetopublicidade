@@ -4381,5 +4381,4 @@ a.thumbnail {
 .gradient2 {
   background: -webkit-linear-gradient(#FF0000, #333);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  }
+  -webkit-text-fill-color: transparent;}

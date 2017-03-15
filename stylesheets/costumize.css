@@ -1,0 +1,6 @@
+.fundo-padrao{background: inherit !important;}
+.fonte{font-family: 'Open Sans Condensed';}
+.texto-principal{font-family:'Open Sans Condensed';text-align: center; color: #000000; font-size: 80px;}
+.texto-menu{color:#000000;}
+.sanduiche{background: #000000 !important;}
+.sem-pad{padding: 0 0 0 0;}
