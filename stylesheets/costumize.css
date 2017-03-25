@@ -11,6 +11,6 @@ a:hover{color:#FFF;}
 @media only screen and (min-width: 40rem) {
 .logo{margin-top:15px;top:-6px;width: 10%; height: 10%;position: absolute;left: 50%;right: 50%; margin-left: -59px;}}
 .logo-small {float: right; width: 20%;height: 20%; }
-
+.inicial{background-color: #242424;color:#E5E5E5;text-align:center;display: table;  position: relative;width: 100%;margin: 0;}
 
 		
