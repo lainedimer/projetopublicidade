@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
 </head>
 <style>
 *{
@@ -27,6 +28,7 @@
 	width:100%;
 	height:100%;
 }
+	
 </style>
 <body>
 <div class="container-all">
@@ -36,33 +38,76 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
 	    <a class="navbar-brand" href="#">
-	    	<img alt="Brand" src="logo\logo.png">
+	    	<img class="hidden-xs" alt="Brand" src="logo\logo-hidden.png">
+	    	<img class="visible-xs" style="margin-top: -10px;" alt="Brand" src="logo\logo-visible.png">
 		</a>
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
 			<span class="sr-only">Toggle navigation</span> 
-			<span class="icon-bar" style="background-color: black;"></span> 
-			<span class="icon-bar" style="background-color: black;"></span> 
-			<span class="icon-bar" style="background-color: black;"></span> 
 		</button>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="#portifolio" class="texto-menu ">Portifolio</a></li>
-		<li><a href="#sobre" class="texto-menu ">Sobre</a></li>
-		<li><a href="#contato " class="texto-menu ">Contato</a></li>
+		<li><a href="#portifolio" class="fonte texto-menu"><h3>Portifolio</h3></a></li>
+		<li><a href="#sobre" class="fonte texto-menu"><h3>Sobre</h3></a></li>
+		<li><a href="#contato " class="fonte texto-menu"><h3>Contato</h3></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-	<div class="jumbotron" style="width:100%; height:0; min-height:100%;background:black">
-		<div class="container" style="color:white;">
+	<div class="jumbotron" style="width:100%; height:0; min-height:100%;background:#1DBDC9">
+		<div class="container" style="color:#E84209;margin-top:3%;text-shadow: 2px 2px 0px #000000;">
 			<div class="row">
-  				<div class="col-md-6 col-md-offset-3">
-  					<h1 class="fonte">Pode entrar, tem café</h1>
-					<i class="animated bounceInLeft fa fa-coffee fa-5x"></i>
+  				<div class="col-md-12">
+  					<p class="hidden-xs fonte-home animated bounceInLeft" style="font-size: 170px; text-align: right;">LET'S <br><strong>GO!</strong></p>
+  					<p class="visible-xs fonte-home animated bounceInLeft" style="font-size: 78px; text-align: right;">LET'S <br>GO!</p>
   				</div>
+			</div>		
+		</div>
+	</div>
+	<div class="jumbotron" style="height:auto;background:#FFF5EA;margin-top: -40px;">
+		<div class="container" style="color:#ff2233;text-shadow: 2px 2px 0px #FFF5EA;">
+			<div class="row">
+  				<div class="col-md-3">
+  					<img class="portifolio" src="trab/Aviacom.png">
+  				</div>
+  				<div class="col-md-3">
+  					<img class="portifolio" src="trab/Bem Caseira.png">
+  				</div>
+  				<div class="col-md-3">
+  					<img class="portifolio" src="trab/Daniela Bendo.png">
+  				</div>
+  				<div class="col-md-3">
+  					<img class="portifolio" src="trab/CDL Sombrio.png">
+  				</div>
+			</div>		
+
+			<div class="row">
+	  				<div class="col-md-3">
+	  					<img class="portifolio" src="trab/Canal Catarinense.png">
+	  				</div>
+	  				<div class="col-md-3">
+	  					<img class="portifolio" src="trab/DezUrbaniza.png">
+	  				</div>
+	  				<div class="col-md-3">
+	  					<img class="portifolio" src="trab/Eduardo.png">
+	  				</div>
+	  				<div class="col-md-3">
+	  					<img class="portifolio" src="trab/Espaço Paula Matos.png">
+	  				</div>
+				</div>		
+
+			<div class="row">
+	  				<div class="col-md-4">
+	  					<img class="portifolio" src="trab/Giassi.png">
+	  				</div>
+	  				<div class="col-md-4">
+	  					<img class="portifolio" src="trab/Italianinho Lojas.png">
+	  				</div>
+	  				<div class="col-md-4">
+	  					<img class="portifolio" src="trab/Mano Barbearia Club.png">
+	  				</div>
 			</div>		
 		</div>
 	</div>

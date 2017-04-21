@@ -1,1 +1,6 @@
-.fonte{font-family: 'Open Sans Condensed'; color: #000;}
+.fonte{font-family: 'Open Sans Condensed';}
+.fonte-home{font-family: 'Oswald';}
+.texto-menu{color: #1C1C1C;}
+.texto-menu:hover{text-decoration: underline;color:#F07A5C;}
+.navbar-nav:hover{background-color:#F07A5C;}
+.portifolio{width: 50%; height: 50%;}
