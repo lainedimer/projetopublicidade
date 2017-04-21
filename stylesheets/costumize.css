@@ -4,3 +4,8 @@
 .texto-menu:hover{text-decoration: underline;color:#F07A5C;}
 .navbar-nav:hover{background-color:#F07A5C;}
 .portifolio{width: 50%; height: 50%;}
+.bg {
+  background: url('../fundo/wallpaper.jpg') no-repeat center center;
+  position: fixed;
+  z-index: -1;
+}
