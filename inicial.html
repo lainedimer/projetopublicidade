@@ -14,51 +14,34 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
-<style>
-*{
-	margin:0;
-	padding:0;
-}
-.container-all{
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:11;
-	width:100%;
-	height:100%;
-}
-	
-</style>
 <body>
 <div class="container-all">
 
 <nav class="navbar">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
 	    <a class="navbar-brand" href="#">
 	    	<img class="hidden-xs" alt="Brand" src="logo\logo-hidden.png">
 	    	<img class="visible-xs" style="margin-top: -10px;" alt="Brand" src="logo\logo-visible.png">
 		</a>
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
-			<span class="sr-only">Toggle navigation</span> 
 		</button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="#portifolio" class="fonte texto-menu"><h3>Portifolio</h3></a></li>
+		<li><a href="#portifolio" class="fonte texto-menu"><h3>Portfolio</h3></a></li>
 		<li><a href="#sobre" class="fonte texto-menu"><h3>Sobre</h3></a></li>
 		<li><a href="#contato " class="fonte texto-menu"><h3>Contato</h3></a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
-	<div class="jumbotron" style="background: url('fundo/wallpaper.jpg') !important;background-size: cover;width:100%; height:0; min-height:100%;background:#1DBDC9;background-repeat: no-repeat;
-    background-position: center !important;">
-		<div class="container" style="color:#E84209;margin-top:3%;text-shadow: 2px 2px 0px #000000;">
+	<div class="jumbotron jumb-fluid" style="background-image: url(fundo/wallpaper.png)!important;">
+		<div class="container container-font">
 			<div class="row">
   				<div class="col-md-12">
   					<p class="hidden-xs fonte-home animated bounceInRight" style="font-size: 170px; text-align: right;">LET'S <br><strong>GO!</strong></p>
@@ -68,10 +51,10 @@
 		</div>
 	</div>
 
-	<div class="jumbotron" style="background-size: cover; background: #ffffff; width:100%; height:0; min-height:100%; background-repeat: no-repeat; background-position: center !important;">
+	<div class="jumbotron jumb-fluid fundo-branco">
 		<div class="container">
-			<div class="row" style="text-align: center; font-family: 'Oswald'; ">
-				<h2 style="font-family: 'Oswald'; font-size: 50px; color: #E84209; border-bottom: 2px solid;">PRODUZA SEU MATERIAL PUBLICITÁRIO!</h2>
+			<div class="row fonte-home alinhar-centro">
+				<p style="font-family: 'Oswald'; font-size: 50px; color: #E84209; border-bottom: 2px solid;">PRODUZA SEU MATERIAL PUBLICITÁRIO!</p>
 				<p>Criação de banners, campanhas de publicidade e tudo para o que sua empresa precisar divulgar</p>
   				<div class="col-md-12">
   				<figure style="margin-top: 50px;">
@@ -105,54 +88,98 @@
 
 	
 
-	<div class="jumbotron" style="height:auto;background:#FFF5EA;margin-top: 100px;">
-		<div class="container" style="color:#ff2233;text-shadow: 2px 2px 0px #FFF5EA;">
-			<div class="row">
-  				<div class="col-md-3">
-  					<img class="portifolio" src="trab/Aviacom.png">
-  				</div>
-  				<div class="col-md-3">
-  					<img class="portifolio" src="trab/Bem Caseira.png">
-  				</div>
-  				<div class="col-md-3">
-  					<img class="portifolio" src="trab/Daniela Bendo.png">
-  				</div>
-  				<div class="col-md-3">
-  					<img class="portifolio" src="trab/CDL Sombrio.png">
-  				</div>
-			</div>		
+	<div class="jumbotron jumb-logo">
+		<div class="container-fluid">
+			<div class="row" style="margin-top: -7%">
+				<div class="col-md-4 snake paula-matos">
+		  			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/Espaço Paula Matos.png">
+				</div>
+	 
+				<div class="col-md-4 snake bem-caseira">
+		 			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  		<img class="portifolio" src="trab/Bem Caseira.png">
+				</div>
+	 
+				<div class="col-md-4 snake aviacom">
+	  				<div class="overlay">
+	    				<span class="description">O que fizemos</span>
+	  				</div>
+	  				<img class="portifolio" src="trab/Aviacom.png">			
+				</div>
+			</div>
 
 			<div class="row">
-	  				<div class="col-md-3">
-	  					<img class="portifolio" src="trab/Canal Catarinense.png">
+				<div class="col-md-4 snake daniela-bendo">
+		  			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/Daniela Bendo.png">
+				</div>
+	 
+				<div class="col-md-4 snake">
+		 			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/CDL Sombrio.png">
+				</div>
+	 
+				<div class="col-md-4 snake">
+	  				<div class="overlay">
+	    				<span class="description">O que fizemos</span>
 	  				</div>
-	  				<div class="col-md-3">
-	  					<img class="portifolio" src="trab/DezUrbaniza.png">
-	  				</div>
-	  				<div class="col-md-3">
-	  					<img class="portifolio" src="trab/Eduardo.png">
-	  				</div>
-	  				<div class="col-md-3">
-	  					<img class="portifolio" src="trab/Espaço Paula Matos.png">
-	  				</div>
-				</div>		
+	  				<img class="portifolio" src="trab/Canal Catarinense.png">			
+				</div>
+			</div>
 
 			<div class="row">
-	  				<div class="col-md-4">
-	  					<img class="portifolio" src="trab/Giassi.png">
+				<div class="col-md-4 snake">
+		  			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/DezUrbaniza.png">
+				</div>
+	 
+				<div class="col-md-4 snake">
+		 			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/Eduardo.png">
+				</div>
+	 
+				<div class="col-md-4 snake">
+	  				<div class="overlay">
+	    				<span class="description">O que fizemos</span>
 	  				</div>
-	  				<div class="col-md-4">
-	  					<img class="portifolio" src="trab/Italianinho Lojas.png">
-	  				</div>
-	  				<div class="col-md-4">
-	  					<img class="portifolio" src="trab/Mano Barbearia Club.png">
-	  				</div>
-			</div>		
+	  				<img class="portifolio" src="trab/Giassi.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 snake">
+		  			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/Italianinho Lojas.png">
+				</div>
+	 
+				<div class="col-md-4 snake">
+		 			<div class="overlay">
+						<span class="description">O que fizemos</span>
+		  			</div>
+		  			<img class="portifolio" src="trab/Mano Barbearia Club.png">
+				</div>
+			</div>
 		</div>
 	</div>
-		
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </div>
+
+<script src="js/snake.min.js">
+</script>
+<script>$(".snake").snakeify({speed: 200});</script>
 </body>
 </html>
