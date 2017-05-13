@@ -28,8 +28,55 @@
 	margin-top:3%;
 	text-shadow: 2px 2px 0px #000000;
 }
+.fonte-sobre{
+	color:#179AA3;
+	margin-top:3%;
+	text-shadow: 2px 2px 0px #000000;
+}
+.fundo-branco{
+	background-color: #FFFFFF;
+}
 .fonte{font-family: 'Open Sans Condensed';}
 .fonte-home{font-family: 'Oswald';}
+.size-28{
+	font-size: 28px !important;
+}
+.jumb-margem{
+	margin-top: -7%;"
+}
+.sombra{
+ 	box-shadow: 0px 2px 0px #363636;
+    -webkit-box-shadow: 0px 2px 0px #363636;
+    -moz-box-shadow: 0px 2px 0px #363636;
+}
+#imagem-principal{
+	background-image: url(../fundo/wallpaper.png)!important;
+}
+#margem-texto{
+	margin-top: -10px;
+}
+#margem-sobre{
+	margin-top: 4%;
+}
+#font-170{
+	font-size: 170px;
+}
+#font-78{
+	font-size: 78px;
+}
+.alinhar-direita{
+	text-align: right;
+}
+.size-36{
+	font-size: 36px;
+}
+.tam-imagem{
+	width: 160px;
+	height: 160px;
+}
+.img-margem-direita{
+	margin-right: 5px;
+}
 .texto-menu{color: #1C1C1C;}
 .texto-menu:hover{text-decoration: underline;color:#F07A5C;}
 .navbar-nav:hover{}
@@ -65,6 +112,9 @@
 }
 .daniela-bendo{
 	background-color: #FFFACD;
+}
+.cdl{
+	background-color: #C6E2FF;
 }
 
 

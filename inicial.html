@@ -25,9 +25,10 @@
     <div class="navbar-header">
 	    <a class="navbar-brand" href="#">
 	    	<img class="hidden-xs" alt="Brand" src="logo\logo-hidden.png">
-	    	<img class="visible-xs" style="margin-top: -10px;" alt="Brand" src="logo\logo-visible.png">
+	    	<img class="visible-xs" id="margem-texto" alt="Brand" src="logo\logo-visible.png">
 		</a>
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+			<span class="sr-only">Toggle navigation</span> 
 		</button>
     </div>
 
@@ -40,27 +41,30 @@
     </div>
   </div>
 </nav>
-	<div class="jumbotron jumb-fluid" style="background-image: url(fundo/wallpaper.png)!important;">
+	<div class="jumbotron jumb-fluid" id="imagem-principal">
 		<div class="container container-font">
 			<div class="row">
   				<div class="col-md-12">
-  					<p class="hidden-xs fonte-home animated bounceInRight" style="font-size: 170px; text-align: right;">LET'S <br><strong>GO!</strong></p>
-  					<p class="visible-xs fonte-home animated bounceInLeft" style="font-size: 78px; text-align: right;">LET'S <br>GO!</p>
+  					<p class="hidden-xs fonte-home animated bounceInRight alinhar-direita" id="font-170">LET'S <br><strong>GO!</strong></p>
+  					<p class="visible-xs fonte-home animated bounceInLeft alinhar-direita" id="font-78">LET'S <br>GO!</p>
   				</div>
 			</div>		
 		</div>
 	</div>
 
-	<div class="jumbotron jumb-fluid fundo-branco">
+	<div class="jumbotron jumb-fluid fundo-branco jumb-margem">
 		<div class="container">
-			<div class="row fonte-home alinhar-centro">
-				<p style="font-family: 'Oswald'; font-size: 50px; color: #E84209; border-bottom: 2px solid;">PRODUZA SEU MATERIAL PUBLICITÁRIO!</p>
-				<p>Criação de banners, campanhas de publicidade e tudo para o que sua empresa precisar divulgar</p>
-  				<div class="col-md-12">
-  				<figure style="margin-top: 50px;">
-  					<img src="img/criando.png">
-  				</figure>
-  				</div>
+			<div class="row fonte-sobre fonte-home">
+				<p id="font-78">Sobre a Tauti<img src="img/empresa.jpg" alt="empresa" align="right" class="img-circle tam-imagem sombra"> <img src="img/coffee.jpg" alt="empresa" align="right" class="img-circle tam-imagem img-margem-direita sombra"></p> 
+				
+			</div>
+
+			<div class="row fonte" id="margem-sobre">
+				<p class="size-28 text-justify">A Tauti é uma agência de comunicação que acredita no poder das ideias e de como elas podem transformar o mundo.</br> Fundada em 2015, com uma proposta diferenciada de atender poucas marcas,atua no ambiente de cada um dos seus clientes visando um serviço mais humanizado e que esteja profundamente envolvido no processo de cada negócio. Um modelo de atendimento ancorado na amizade e que busca a integração cada vez mais positiva das marcas com seus clientes.</p>
+				<blockquote>
+				  <p>Devemos não somente nos defender, mas também nos afirmar, e nos afirmar não somente enquanto identidades, mas enquanto força criativa.</p>
+				  <footer>Michel Foucault</footer>
+				</blockquote>
 			</div>
 				
 		</div>
@@ -121,7 +125,7 @@
 		  			<img class="portifolio" src="trab/Daniela Bendo.png">
 				</div>
 	 
-				<div class="col-md-4 snake">
+				<div class="col-md-4 snake cdl">
 		 			<div class="overlay">
 						<span class="description">O que fizemos</span>
 		  			</div>
