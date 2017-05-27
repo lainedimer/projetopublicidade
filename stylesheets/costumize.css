@@ -36,10 +36,22 @@
 .fundo-branco{
 	background-color: #FFFFFF;
 }
+
+/*tipografias*/
+
 .fonte{font-family: 'Open Sans Condensed';}
 .fonte-home{font-family: 'Oswald';}
+.font-julius{
+	font-family: 'Julius Sans One';
+}
+
+/*tamanhos*/
+
 .size-28{
 	font-size: 28px !important;
+}
+.size-68{
+	font-size: 68px;
 }
 .jumb-margem{
 	margin-top: -7%;"
@@ -80,27 +92,38 @@
 .texto-menu{color: #1C1C1C;}
 .texto-menu:hover{text-decoration: underline;color:#F07A5C;}
 .navbar-nav:hover{}
-.portifolio{width: 100%; height: 100%;}
 .fundo-branco{
 	background: #ffffff;
 }
 .alinhar-centro{
 	text-align: center;
 }
-.snake{
-    position: relative;
-    overflow: hidden;
-}
-.overlay{
-	width: 452px !important;
-	position: absolute;
-	opacity: 0.9;
-	text-align: center;
-	padding-top: 60px;
-	background-color: white;
-    color:black;
 
-}
+.main{
+			display: inline-block;
+			padding: 0;
+		}
+		.main img{
+			width: 70%;
+			height: 70%;
+			margin-left: 15%;
+		}
+		.snake{
+    		position: relative;
+    		overflow: hidden;
+    	}
+    	.overlay{
+    		position: absolute;
+    		opacity: 0.9;
+    		text-align: left;
+    		padding-top: 60px;
+    	}
+    	.overlay .title{
+    		font-size: 15px;
+    		font-weight: bold;
+    		display: block;
+    		width: 100%;
+    	}
 .paula-matos{
 	background-color: #E8E8E8;
 }
@@ -115,6 +138,37 @@
 }
 .cdl{
 	background-color: #C6E2FF;
+}
+.overley-pm{
+	background-color:  #00BFFF;
+}
+.laranja{
+	background-color:  #FF8C00;
+}
+.overley-ac{
+	background-color: #FF0000;
+}
+.overley-db{
+	background-color: #FFD700;
+}
+.overley-cl{
+	background-color: #00008B;
+}
+.roxo{
+	background-color: #800080;
+}
+.cinza-escuro{
+	background-color: #4F4F4F;
+}
+.cinza-claro{
+	background-color: #D4D4D4;
+}
+.eduardo{
+	background-color: #E4C0FC;
+}
+
+.font-laranja{
+	color: #FF8C00;
 }
 
 
