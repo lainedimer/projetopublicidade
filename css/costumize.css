@@ -1,3 +1,5 @@
+/*container*/
+
 *{
 	margin:0;
 	padding:0;
@@ -10,6 +12,15 @@
 	width:100%;
 	height:100%;
 }
+
+.container-font{
+	color:#E84209;
+	margin-top:3%;
+	text-shadow: 2px 2px 0px #000000;
+}
+
+/*Jumbtron*/
+
 .jumb-fluid{
 	background-size: cover;
 	width:100%; 
@@ -20,14 +31,10 @@
 }
 .jumb-logo{
 	height:auto;
-	background:#FFF5EA;
+	background-color: inherit;
 	margin-top: 100px;
 }
-.container-font{
-	color:#E84209;
-	margin-top:3%;
-	text-shadow: 2px 2px 0px #000000;
-}
+
 .fonte-sobre{
 	color:#179AA3;
 	margin-top:3%;
@@ -39,20 +46,27 @@
 
 /*tipografias*/
 
-.fonte{font-family: 'Open Sans Condensed';}
-.fonte-home{font-family: 'Oswald';}
-.font-julius{
-	font-family: 'Julius Sans One';
-}
+.fonte-open{font-family: 'Open Sans Condensed';}
+.fonte-julius{font-family: 'Julius Sans One';}
 
 /*tamanhos*/
 
 .size-28{
 	font-size: 28px !important;
 }
-.size-68{
-	font-size: 68px;
+.size-36{
+	font-size: 36px;
 }
+.size-68{
+	font-size: 40px;
+}
+#font-78{
+	font-size: 78px;
+}
+#font-170{
+	font-size: 170px;
+}
+
 .jumb-margem{
 	margin-top: -7%;"
 }
@@ -70,17 +84,9 @@
 #margem-sobre{
 	margin-top: 4%;
 }
-#font-170{
-	font-size: 170px;
-}
-#font-78{
-	font-size: 78px;
-}
+.margem-esquerda{margin-left: 5%;}
 .alinhar-direita{
 	text-align: right;
-}
-.size-36{
-	font-size: 36px;
 }
 .tam-imagem{
 	width: 160px;
@@ -124,47 +130,8 @@
     		display: block;
     		width: 100%;
     	}
-.paula-matos{
-	background-color: #E8E8E8;
-}
-.bem-caseira{
-	background-color: #FFD39B;
-}
-.aviacom{
-	background-color: #FFDAB9;
-}
-.daniela-bendo{
-	background-color: #FFFACD;
-}
-.cdl{
-	background-color: #C6E2FF;
-}
-.overley-pm{
-	background-color:  #00BFFF;
-}
-.laranja{
-	background-color:  #FF8C00;
-}
-.overley-ac{
-	background-color: #FF0000;
-}
-.overley-db{
-	background-color: #FFD700;
-}
-.overley-cl{
-	background-color: #00008B;
-}
-.roxo{
-	background-color: #800080;
-}
-.cinza-escuro{
-	background-color: #4F4F4F;
-}
-.cinza-claro{
-	background-color: #D4D4D4;
-}
-.eduardo{
-	background-color: #E4C0FC;
+.azul{
+	background-color:  #179AA3;
 }
 
 .font-laranja{
