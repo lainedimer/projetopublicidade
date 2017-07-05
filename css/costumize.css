@@ -1,8 +1,8 @@
 /*container*/
 
 *{
-	margin:0;
 	padding:0;
+	 margin: 0 auto;
 }
 .container-all{
 	position:absolute;
@@ -50,7 +50,9 @@
 .fonte-julius{font-family: 'Julius Sans One';}
 
 /*tamanhos*/
-
+.size-12{
+	font-size: 12px;
+}
 .size-28{
 	font-size: 28px !important;
 }
@@ -99,12 +101,11 @@
 .texto-menu:hover{text-decoration: underline;color:#F07A5C;}
 .navbar-nav:hover{}
 .fundo-branco{
-	background: #ffffff;
+	backgrouposition: relative;nd: #ffffff;
 }
 .alinhar-centro{
 	text-align: center;
 }
-
 .main{
 			display: inline-block;
 			padding: 0;
