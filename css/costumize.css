@@ -134,9 +134,24 @@
 .azul{
 	background-color:  #179AA3;
 }
+.laranja{
+	background-color:  #FF8C00;
+}
 
 .font-laranja{
 	color: #FF8C00;
 }
 
+a[href="#top"]{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+    color: #179AA3;
+}
 

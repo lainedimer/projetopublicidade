@@ -29,7 +29,7 @@
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
 					<ul class="nav navbar-nav navbar-right">
-					<li><a href="#portfolio" class="fonte-open texto-menu"><h3>Portfolio</h3></a></li>
+						<li><a href="#portfolio" class="fonte-open texto-menu"><h3>Portfolio</h3></a></li>
 						<li><a href="#sobre" class="fonte-open texto-menu"><h3>Sobre</h3></a></li>
 						<li><a href="#contato " class="fonte-open texto-menu"><h3>Contato</h3></a></li>
 					</ul>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		
-			<div class="jumbotron jumb-fluid fundo-branco jumb-margem">
+		<div class="jumbotron jumb-fluid fundo-branco jumb-margem">
 			<div id="sobre">
 				<div class="container">
 					<div class="row fonte-sobre fonte-julius">
@@ -161,6 +161,7 @@
 					</div>
 				</div>
 			</div>
+			<a href="#top" class="glyphicon glyphicon-chevron-up azul font-laranja"></a>
 		</div>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/snake.min.js"></script>
@@ -169,6 +170,20 @@
 	</div>
 
 </script>
-<script>$(".snake").snakeify({speed: 200});</script>
+<script>$(".snake").snakeify({speed: 200});
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('a[href="#top"]').fadeIn();
+			} else {
+				$('a[href="#top"]').fadeOut();
+			}
+		});
+
+		$('a[href="#top"]').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+		});
+	});</script>
 </body>
 </html>
