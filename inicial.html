@@ -163,27 +163,50 @@
 			</div>
 			<a href="#top" class="glyphicon glyphicon-chevron-up azul font-laranja"></a>
 		</div>
+
+
+		
+		<div class="jumbotron azul">
+			<div id="contato">
+				<div class="container-fluid">
+				<form class="form" method="get" action="dados.php">
+						<label>
+							<div class="form-group">
+								<label for="nome">Nome: </label>    
+								<input id="nome" type="text" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="email">E-mail: </label>    
+								<input id="email" type="text" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="msg">Mensagem</label>
+								<input type="msg" type="text-area" class="form-control"/>
+							</div>
+							<button type="submit" class="btn btn-default">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/snake.min.js"></script>
 		<script src="js/smoth.js"></script>
+	</script>
+	<script>$(".snake").snakeify({speed: 200});
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('a[href="#top"]').fadeIn();
+				} else {
+					$('a[href="#top"]').fadeOut();
+				}
+			});
 
-	</div>
-
-</script>
-<script>$(".snake").snakeify({speed: 200});
-	$(document).ready(function(){
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 100) {
-				$('a[href="#top"]').fadeIn();
-			} else {
-				$('a[href="#top"]').fadeOut();
-			}
-		});
-
-		$('a[href="#top"]').click(function(){
-			$('html, body').animate({scrollTop : 0},800);
-			return false;
-		});
-	});</script>
-</body>
-</html>
+			$('a[href="#top"]').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
+		});</script>
+	</body>
+	</html>
