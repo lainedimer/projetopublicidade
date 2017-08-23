@@ -31,7 +31,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#portfolio" class="fonte-open texto-menu"><h3>Portfolio</h3></a></li>
 						<li><a href="#sobre" class="fonte-open texto-menu"><h3>Sobre</h3></a></li>
-						<li><a href="#contato " class="fonte-open texto-menu"><h3>Contato</h3></a></li>
+						<li><a href="#contato" class="fonte-open texto-menu"><h3>Contato</h3></a></li>
 					</ul>
 				</div>
 			</div>
@@ -164,56 +164,59 @@
 			<a href="#top" class="glyphicon glyphicon-chevron-up azul font-laranja"></a>
 		</div>
 
-
-		
-		<div class="jumbotron jumb-fluid jumb-margem">
+		<div class="jumbotron jumb-fluid jumb-margem fundo-branco">
 			<div id="contato">
 				<div class="container-fluid">
-				<form class="form-horizontal" method="get" action="dados.php">
-							<div class="form-group">
-								<label class="col-sm-2 control-label" for="nome">Nome: </label> 
-								<div class="col-sm-5">   
+					<div class="row fonte-sobre fonte-julius" style="margin-left: 3%;">
+						<p class="hidden-xs" id="font-78">Contato</p> 
+						<p class="visible-xs" id="font-36">Contato</p>
+					</div> 
+
+					<form class="form-horizontal" method="get" action="dados.php" style="margin-top: 4%;">
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="nome">Nome: </label> 
+							<div class="col-sm-5">   
 								<input class="form-control"  id="nome" type="text"/>
-								</div>
 							</div>
-							<div class="form-group">
-								<label class="col-sm-2 control-label" for="email">E-mail: </label> 
-								<div class="col-sm-5">      
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="email">E-mail: </label> 
+							<div class="col-sm-5">      
 								<input class="form-control"  id="email" type="text"/>
-								</div>
 							</div>
-							<div class="form-group">
-								<label class="col-sm-2 control-label" for="msg">Mensagem</label>
-								<div class="col-sm-5">   
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="msg">Mensagem</label>
+							<div class="col-sm-5">   
 								<textarea class="form-control" rows="3" id="msg"></textarea>
-								</div>
 							</div>
-							 <div class="col-sm-offset-2 col-sm-10">
+						</div>
+						<div class="col-sm-offset-2 col-sm-10">
 							<button type="submit" class="btn btn-default">Enviar</button>
-							</div>
-						</form>
-					</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="js/snake.min.js"></script>
-		<script src="js/smoth.js"></script>
-	</script>
-	<script>$(".snake").snakeify({speed: 200});
-		$(document).ready(function(){
-			$(window).scroll(function(){
-				if ($(this).scrollTop() > 100) {
-					$('a[href="#top"]').fadeIn();
-				} else {
-					$('a[href="#top"]').fadeOut();
-				}
-			});
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/snake.min.js"></script>
+	<script src="js/smoth.js"></script>
+</script>
+<script>$(".snake").snakeify({speed: 200});
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('a[href="#top"]').fadeIn();
+			} else {
+				$('a[href="#top"]').fadeOut();
+			}
+		});
 
-			$('a[href="#top"]').click(function(){
-				$('html, body').animate({scrollTop : 0},800);
-				return false;
-			});
-		});</script>
-	</body>
-	</html>
+		$('a[href="#top"]').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+		});
+	});</script>
+</body>
+</html>
