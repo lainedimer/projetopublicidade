@@ -166,24 +166,31 @@
 
 
 		
-		<div class="jumbotron azul">
+		<div class="jumbotron jumb-fluid jumb-margem">
 			<div id="contato">
 				<div class="container-fluid">
-				<form class="form" method="get" action="dados.php">
-						<label>
+				<form class="form-horizontal" method="get" action="dados.php">
 							<div class="form-group">
-								<label for="nome">Nome: </label>    
-								<input id="nome" type="text" class="form-control" />
+								<label class="col-sm-2 control-label" for="nome">Nome: </label> 
+								<div class="col-sm-5">   
+								<input class="form-control"  id="nome" type="text"/>
+								</div>
 							</div>
 							<div class="form-group">
-								<label for="email">E-mail: </label>    
-								<input id="email" type="text" class="form-control" />
+								<label class="col-sm-2 control-label" for="email">E-mail: </label> 
+								<div class="col-sm-5">      
+								<input class="form-control"  id="email" type="text"/>
+								</div>
 							</div>
 							<div class="form-group">
-								<label for="msg">Mensagem</label>
-								<input type="msg" type="text-area" class="form-control"/>
+								<label class="col-sm-2 control-label" for="msg">Mensagem</label>
+								<div class="col-sm-5">   
+								<textarea class="form-control" rows="3" id="msg"></textarea>
+								</div>
 							</div>
+							 <div class="col-sm-offset-2 col-sm-10">
 							<button type="submit" class="btn btn-default">Enviar</button>
+							</div>
 						</form>
 					</div>
 				</div>
