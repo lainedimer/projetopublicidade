@@ -16,13 +16,13 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'laainediimer@gmail.com';                 // SMTP username
+    $mail->Username = '';                 // SMTP username
     $mail->Password = '';                           // SMTP password   
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('leonarmaier@gmail.com','leonardo');   // Add a recipient
-    $mail->addAddress('laainediimer@gmail.com','laine');               // Name is optional
+    $mail->setFrom('','');   // Add a recipient
+    $mail->addAddress('','');               // Name is optional
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
