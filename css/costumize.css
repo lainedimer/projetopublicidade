@@ -78,7 +78,7 @@
 	-moz-box-shadow: 0px 2px 0px #363636;
 }
 #imagem-principal{
-	background-image: url(../fundo/wallpaper.png)!important;
+	background-image: url(../fundo/teste.jpg)!important;
 }
 #margem-texto{
 	margin-top: -10px;
@@ -149,6 +149,9 @@
 .font-laranja{
 	color: #FF8C00;
 }
+.fonte-branco{
+	color: #FFF;
+}
 .input-form{ background-color: inherit; box-shadow: 0 0 0 0 !important; border-color: none;}
 a[href="#top"]{
 	padding:10px;
@@ -168,37 +171,33 @@ a[href="#top"]:visited{
 }
 .style-3 input[type="text"] {
 	padding: 6px;	
-	border:solid 1px #E84209;
-	/*transition: box-shadow 0.3s, border 0.3s;*/
-}
-.style-3 input[type="text"]:focus,
-.style-3 input[type="text"].focus {
-	border: solid 2px #E84209;	
+	border:solid 1px #000;
+	background-color: #000;
+	opacity: 0.65;
 }
 
 .style-3 textarea {
 	padding: 6px;	
-	border:solid 1px #E84209;
+	border:solid 1px #000;
+	background-color: #000;
+	opacity: 0.65;
 	/*transition: box-shadow 0.3s, border 0.3s;*/
 }
-.style-3 textarea:focus,
-.style-3 textarea.focus {
-	border: solid 2px #E84209;
-}
+
 .background-4 {
-	background-image: url(../img/contato.jpg)!important;
+	background-image: url(../img/teste2.jpg)!important;
 	width:100%; 
 }
 
 .enviar{
 	text-shadow: 1px 1px 0px #000000;
-	background: #E84209;
+	background: #10a4a3;
 	border-radius: 0px;
 	border: none;
 	width: 140px;	
 }
 .enviar:hover{
-	background-color: #c23a0b; 
+	background-color: #0f8786; 
 }
 .menu-fonte:hover{
 	background-color: inherit !important;
