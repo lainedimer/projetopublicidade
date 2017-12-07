@@ -16,13 +16,13 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = '';                 // SMTP username
+    $mail->Username = 'laainediimer@gmail.com';                 // SMTP username
     $mail->Password = '';                           // SMTP password   
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('','');   // Add a recipient
-    $mail->addAddress('','');               // Name is optional
+    $mail->setFrom('laainediimer@gmail.com','');   // Add a recipient
+    $mail->addAddress('laainediimer@gmail.com','');               // Name is optional
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
@@ -31,8 +31,11 @@ try {
     $mail->AltBody = $msg;
 
     $mail->send();
-    echo 'Message has been sent';
+    $enviado = 'Message has been sent';
+    header('Location: index.php?enviado=1#contato');    
 } catch (Exception $e) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
+    header('Location: index.php?enviado=0#contato');
+
 }

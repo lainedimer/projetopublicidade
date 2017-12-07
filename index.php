@@ -63,8 +63,7 @@
 					</div>
 
 					<div class="row fonte-open" id="margem-sobre">
-						<p class="hidden-xs size-28 text-justify">
-							 A Tauti é uma agência de comunicação que acredita no poder das ideias e de como elas podem transformar o mundo.</br> Fundada em 2015, com uma proposta diferenciada de atender poucas marcas,atua no ambiente de cada um dos seus clientes visando um serviço mais humanizado e que esteja profundamente envolvido no processo de cada negócio. Um modelo de atendimento ancorado na amizade e que busca a integração cada vez mais positiva das marcas com seus clientes.</p>
+						<p class="hidden-xs size-28 text-justify">A Tauti é uma agência de comunicação que acredita no poder das ideias e de como elas podem transformar o mundo.</br> Fundada em 2015, com uma proposta diferenciada de atender poucas marcas,atua no ambiente de cada um dos seus clientes visando um serviço mais humanizado e que esteja profundamente envolvido no processo de cada negócio. Um modelo de atendimento ancorado na amizade e que busca a integração cada vez mais positiva das marcas com seus clientes.</p>
 						<p class="visible-xs size-12 text-justify" style="padding: 18px;">A Tauti é uma agência de comunicação que acredita no poder das ideias e de como elas podem transformar o mundo.</br> Fundada em 2015, com uma proposta diferenciada de atender poucas marcas,atua no ambiente de cada um dos seus clientes visando um serviço mais humanizado e que esteja profundamente envolvido no processo de cada negócio. Um modelo de atendimento ancorado na amizade e que busca a integração cada vez mais positiva das marcas com seus clientes.</p>
 						<blockquote>
 							<p>Devemos não somente nos defender, mas também nos afirmar, e nos afirmar não somente enquanto identidades, mas enquanto força criativa.</p>
@@ -138,27 +137,39 @@
 					<div class="row fonte-julius fonte-sobre" style="margin-left: 3%; margin-top: 5%;">
 						<p class="hidden-xs" id="font-78">Contato</p> 
 						<p class="visible-xs" id="font-36">Contato</p>
-					</div>
+					</div> 
 
+					<?php if (isset($_GET['enviado']) && ($_GET['enviado'])) { ?>
+						<div id="alertSucess" class="alert alert-success" data-alert="alert" style="top:0">
+							<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+							E-mail enviado <strong>sucesso</strong>! 
+						</div>
+					<?php } else if (isset($_GET['enviado']) && !($_GET['enviado'])) { ?>
+						<div class="alert">
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+							<strong>Atençao!</strong> erro ao enviar e-mail. Tente novamente!
+						</div>
+					<?php } ?>
+
+					
 
 					<form class="form-horizontal style-3" action="email.php" method="post" style="margin-top: 3%; margin-left:
 					3%; color:#FFF;">
 					<div>
 						<div class="col-md-5">
 							<div class="form-group">
-								<input class="form-control input-form fonte-branco"  id="nome" name="nome" type="text" placeholder="Nome"/>
+								<input required class="form-control input-form fonte-branco"  id="nome" name="nome" type="text" placeholder="Nome"/>
 							</div>
 							<div class="form-group">
 								<input required class="form-control input-form fonte-branco"  id="email" name="email" type="text" placeholder="E-mail"/>
 							</div>
 							<div class="form-group">
-								<textarea class="input-form form-control fonte-branco" rows="3" id="msg" name="msg" placeholder="Mensagem"></textarea>
+								<textarea required class="input-form form-control fonte-branco" rows="3" id="msg" name="msg" placeholder="Mensagem"></textarea>
 							</div>
 							<button type="submit" class="btn enviar" style="float: right; margin-right: -2%; color: #FFF;">Enviar</button>
 						</div>
 					</div>
 				</form>
-
 				<div class="col-md-6 fonte-julius" style="margin-top: 28.5%;">
 					<p style="font-size: 15px; color: #FFF;">Rua X, centro, nº 123, Sombrio/SC</p>
 				</div>
@@ -189,6 +200,10 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
-});</script>
+});
+
+  $( "#alertSucess" ).fadeIn( 500 ).delay( 3500 ).fadeOut( 400 );
+
+</script>
 </body>
 </html>
