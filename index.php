@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<p class="hidden-xs fonte-julius animated bounceInRight alinhar-direita" id="font-170">LET'S <br><strong>GO!</strong></p>
-						<p class="visible-xs fonte-julius animated bounceInLeft alinhar-direita" id="font-78">LET'tS <br>GO!</p>
+						<p class="visible-xs fonte-julius animated bounceInLeft alinhar-direita" id="font-78">LET'S <br>GO!</p>
 					</div>
 				</div>		
 			</div>
@@ -134,22 +134,22 @@
 		<div class=" jumbotron fundo-branco background-4 jumb-fluid jumb-margem" style="margin-top: -78px;" alt="http://www.downloadswallpapers.com/wallpapers/2012/fevereiro/wallpaper-telefone-antigo-de-duas-cores-696.jpg">
 			<div id="contato" style="margin-top: -48px;">
 				<div class="container-fluid">
-					<div class="row fonte-julius fonte-sobre" style="margin-left: 3%; margin-top: 5%;">
-						<p class="hidden-xs" id="font-78">Contato</p> 
-						<p class="visible-xs" id="font-36">Contato</p>
-					</div> 
-
+					
 					<?php if (isset($_GET['enviado']) && ($_GET['enviado'])) { ?>
 						<div id="alertSucess" class="alert alert-success" data-alert="alert" style="top:0">
 							<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
 							E-mail enviado <strong>sucesso</strong>! 
 						</div>
 					<?php } else if (isset($_GET['enviado']) && !($_GET['enviado'])) { ?>
-						<div class="alert">
-							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<div id="alertDanger" class="alert alert-danger" data-alert="alert" style="top:0">
+							<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
 							<strong>Atençao!</strong> erro ao enviar e-mail. Tente novamente!
 						</div>
 					<?php } ?>
+					<div class="row fonte-julius fonte-sobre" style="margin-left: 3%; margin-top: 5%;">
+						<p class="hidden-xs" id="font-78">Contato</p> 
+						<p class="visible-xs" id="font-36">Contato</p>
+					</div>
 
 					
 
@@ -202,7 +202,8 @@ $(document).ready(function(){
 	});
 });
 
-  $( "#alertSucess" ).fadeIn( 500 ).delay( 3500 ).fadeOut( 400 );
+  $("#alertSucess").delay( 3500 ).fadeOut( 400 ); //nao esta funcionando
+  $("#alertDanger").delay( 3500 ).fadeOut( 400 );
 
 </script>
 </body>
