@@ -25,7 +25,7 @@
 	background-size: cover;
 	width:100%; 
 	height:0;
-	min-height:100%;
+	min-height:100%;	
 	background-repeat: no-repeat;
 	background-position: center !important;
 }
@@ -47,6 +47,7 @@
 /*tipografias*/
 
 .fonte-open{font-family: 'Open Sans Condensed';}
+.fonte-one{font-family: 'Poiret One';}
 .fonte-julius{font-family: 'Julius Sans One';}
 
 /*tamanhos*/
@@ -62,6 +63,9 @@
 .size-68{
 	font-size: 40px;
 }
+.size-64{
+	font-size: 64px !important;
+}
 #font-78{
 	font-size: 78px;
 }
@@ -70,7 +74,7 @@
 }
 
 .jumb-margem{
-	margin-top: -5%;"
+	margin-top: -3%;"
 }
 .sombra{
 	box-shadow: 0px 2px 0px #363636;
@@ -78,7 +82,10 @@
 	-moz-box-shadow: 0px 2px 0px #363636;
 }
 #imagem-principal{
-	background-image: url(../fundo/teste.jpg)!important;
+	background-image: url(../fundo/home.jpg)!important; 
+ 	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #margem-texto{
 	margin-top: -10px;
@@ -90,6 +97,7 @@
 .alinhar-direita{
 	text-align: right;
 }
+
 .tam-imagem{
 	width: 160px;
 	height: 160px;
@@ -171,15 +179,15 @@ a[href="#top"]:visited{
 }
 .style-3 input[type="text"] {
 	padding: 6px;	
-	border:solid 1px #000;
-	background-color: #000;
+	border:solid 1px #FFF;
+	background-color: #FFF;
 	opacity: 0.65;
 }
 
 .style-3 textarea {
 	padding: 6px;	
-	border:solid 1px #000;
-	background-color: #000;
+	border:solid 1px #FFF;
+	background-color: #FFF;
 	opacity: 0.65;
 	/*transition: box-shadow 0.3s, border 0.3s;*/
 }
