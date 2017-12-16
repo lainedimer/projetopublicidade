@@ -10,17 +10,18 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/costumize.css">
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans+Condensed:300|Oswald" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 	
+	<script src="https://use.fontawesome.com/9e336562d9.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 	<div class="container-all">
 		<div class="jumbotron jumb-fluid" id="imagem-principal" style="margin-top:0.01%;margin-bottom:3%;">
 			<div class="container-fluid" style="color:#FFF;">
-				<nav class="navbar" style="margin-top: -2%;">
+				<nav class="navbar">
 					<div class="container-fluid">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="#" style="margin-left: 10%;">
+							<a class="navbar-brand" href="#" style="margin-left: 10%; margin-top: -12%;">
 								<img class="hidden-xs" alt="Brand" src="logo\logo-hidden.png">
 								<img class="visible-xs" id="margem-texto" alt="Brand" src="logo\logo-visible.png">
 							</a>
@@ -33,8 +34,9 @@
 							<ul class="nav navbar-nav navbar-right" style="margin-right: 6%;">
 								<span class="navbar-toggler-icon"></span>
 								<li><a href="#sobre" class="fonte-open texto-menu menu-fonte" style="color:#FFF;"><h3>Sobre</h3></a></li>
-								<li><a href="#portfolio" class="fonte-open texto-menu menu-fonte" style="color:#FFF;"><h3>Portfolio</h3></a></li>
+								<li><a href="#portfolio" class="fonte-open texto-menu menu-fonte" style="color:#FFF;"><h3>Portfólio</h3></a></li>
 								<li><a href="#contato" class="fonte-open texto-menu menu-fonte" style="color:#FFF;"><h3>Contato</h3></a></li>
+								<li><a href="https://www.facebook.com/tautiagencia/?fref=ts" class="menu-fonte texto-menu" style="color:#FFF;font-size: 30px;margin-top:40%;"><i class="fa fa-facebook" aria-hidden="true" "></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,7 +44,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<ul style="list-style-type: none;">
-							<li><a href="#portfolio" class="texto-menu btn btn-default fonte-open alinhar-centro" style="background-color: transparent; border-radius: 30px; color:#FFF; margin-left:45%; margin-top: 28%; font-size: 26px; text-decoration: none !important;">Ver portfolio<span class="glyphicon glyphicon-menu-down"></span></a>
+							<li><a href="#portfolio" class="texto-menu btn btn-default fonte-open alinhar-centro" style="background-color: transparent; border-radius: 30px; color:#FFF; margin-left:42%; margin-top: 25%; font-size: 26px; text-decoration: none !important;">Quem acredita em nós  <span class="glyphicon glyphicon-menu-down"></span></a>
 							</li>
 						</ul>
 					</div>		
@@ -53,8 +55,8 @@
 		<div class="jumbotron jumb-fluid fundo-branco jumb-margem" style="background-color: #FFF;">
 			<div id="sobre">
 				<div class="container">
-					<div class="row fonte-sobre fonte-julius">
-						<p class="hidden-xs" id="font-78">Sobre a Tauti</p> 
+					<div class="row fonte-sobre fonte-one">
+						<p class="hidden-xs size-62">Sobre a Tauti</p> 
 
 						<p class="visible-xs" id="font-36">Sobre a Tauti</p> 
 
@@ -102,12 +104,13 @@
 							<img src="trab/Canal Catarinense.png">			
 						</div>
 
-						<div class="main col-md-3">
-							<img class="portifolio" src="trab/DezUrbaniza.png">
-						</div>
 
 						<div class="main col-md-3">
 							<img class="portifolio" src="trab/Eduardo.png">
+						</div>
+
+						<div class="main col-md-3">
+							<img class="portifolio" src="trab/machado.png">
 						</div>
 					</div>
 
@@ -125,7 +128,7 @@
 							<img class="portifolio" src="trab/Giassi.png">
 						</div>
 					</div>
-		
+
 					<div class="row">
 						<div class="main col-md-3">
 							<img class="portifolio" src="trab/Jesus.png">
@@ -133,12 +136,7 @@
 						<div class="main col-md-3">
 							<img class="portifolio" src="trab/Eliane.png">
 						</div>
-						<div class="main col-md-3">
-							<img class="portifolio" src="trab/machado.png">
-						</div>
-						<div class="main col-md-3">
-							<img class="portifolio" src="trab/Tauti.png">
-						</div>
+						
 					</div>
 				</div> 
 			</div>
@@ -149,74 +147,77 @@
 				<div class="container-fluid">
 
 					<?php if (isset($_GET['enviado']) && ($_GET['enviado'])) { ?>
-						<div id="alertSucess" class="alert alert-success" data-alert="alert" style="top:0">
-							<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
-							E-mail enviado <strong>sucesso</strong>! 
-						</div>
-						<?php } else if (isset($_GET['enviado']) && !($_GET['enviado'])) { ?>
-							<div id="alertDanger" class="alert alert-danger" data-alert="alert" style="top:0">
-								<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
-								<strong>Atençao!</strong> erro ao enviar e-mail. Tente novamente!
-							</div>
-							<?php } ?>
-							<div class="row fonte-julius fonte-sobre alinhar-centro" style="margin-left: 3%; margin-top: 5%;">
-								<p class="hidden-xs" id="font-78">Contato</p> 
-								<p class="visible-xs" id="font-36">Contato</p>
-							</div>
-
-
-							<div style="margin-left: 25%;">
-							<form class="form style-3" action="email.php" method="post" style="margin-top: 3%; margin-left:3%; color:#FFF;">
-								<div>
-									<div class="col-md-8">
-										<div class="form-group">
-											<input required class="form-control input-form"  id="nome" name="nome" type="text" placeholder="Nome*"/>
-										</div>
-										<div class="form-group">
-											<input required class="form-control input-form"  id="email" name="email" type="text" placeholder="E-mail*"/>
-										</div>
-										<div class="form-group">
-											<textarea required class="input-form form-control " rows="3" id="msg" name="msg" placeholder="Mensagem*"></textarea>
-										</div>
-										<button type="submit" id="btn-enviar" class="btn btn-default fonte-open enviar" style="float: right; margin-right: -2%; color: #b2b2b2; background-color: transparent; border-radius: 20px; font-size: 26px; text-decoration: none !important; width: 200px;">Enviar</button>
-									</div>
-								</div>
-							</form>
-						</div>
-						</div>
+					<div id="alertSucess" class="alert alert-success" data-alert="alert" style="top:0">
+						<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+						E-mail enviado <strong>sucesso</strong>! 
 					</div>
-				</div>
-				<div class="col-md-12 footer">
-					<p>Todos os direitos reservados</p>
-				</div>
-				<a href="#top" class="glyphicon glyphicon-menu-up font-laranja"></a>
+					<?php } else if (isset($_GET['enviado']) && !($_GET['enviado'])) { ?>
+					<div id="alertDanger" class="alert alert-danger" data-alert="alert" style="top:0">
+						<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<strong>Atençao!</strong> erro ao enviar e-mail. Tente novamente!
+					</div>
+					<?php } ?>
+					<div class="row fonte-one alinhar-centro fonte-sobre" style="margin-left: 3%; margin-top: 5%;">
+						<p class="hidden-xs size-62">Contato</p> 
+						<p class="fonte-sobre visible-xs" id="font-36">Contato</p>
+					</div>
+
+					<div style="margin-left: 25%;">
+						<form class="form style-3" action="email.php" method="post" style="margin-top: 3%; margin-left:3%; color:#FFF;">
+							<div>
+								<div class="col-md-8">
+									<div class="form-group">
+										<input required class="form-control input-form"  id="nome" name="nome" type="text" placeholder="Nome*"/>
+									</div>
+									<div class="form-group">
+										<input required class="form-control input-form"  id="email" name="email" type="text" placeholder="E-mail*"/>
+									</div>
+									<div class="form-group">
+										<textarea required class="input-form form-control " rows="3" id="msg" name="msg" placeholder="Mensagem*"></textarea>
+									</div>
+									<button type="submit" id="btn-enviar" class="btn btn-default fonte-open enviar" style="float: right; margin-right: -1%; color: #b2b2b2; background-color: transparent; border-radius: 20px; font-size: 26px; text-decoration: none !important; width: 200px;">Enviar</button>
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+				</div>						
 			</div>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-			<script src="js/snake.min.js"></script>
-			<script src="js/smoth.js"></script>
-		</script>
-		<script>
-			$(document).ready(function(){
-				$(window).scroll(function(){
-					if ($(this).scrollTop() > 100) {
-						$('a[href="#top"]').fadeIn();
-					} else {
-						$('a[href="#top"]').fadeOut();
-					}
-				});
-
-				$('a[href="#top"]').click(function(){
-					$('html, body').animate({scrollTop : 0},800);
-					return false;
-				});
-			});
-
 			
-			
-			$("#alertSucess").delay( 3500 ).fadeOut( 400 );
-			$("#alertDanger").delay( 3500 ).fadeOut( 400 );
+		</div>
+		<div class="col-md-12 footer" style="margin-top:-3%; margin-bottom: -3%; background-color: #e8e8e8;">	
+			<h5 class="alinhar-centro" style="color:#919191;">Todos os direitos reservados. Tauti 2017</h5>
+			<h5 class="alinhar-direita" style="margin-top: -2%; color:#b2b2b2; margin-right: 2%;">Laíne Dimer</h5>
+		</div>
+		<a href="#top" class="glyphicon glyphicon-menu-up font-laranja"></a>
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/9e336562d9.js"></script>
+	<script src="js/smoth.js"></script>
+</script>
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('a[href="#top"]').fadeIn();
+			} else {
+				$('a[href="#top"]').fadeOut();
+			}
+		});
+
+		$('a[href="#top"]').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+		});
+	});
 
 
-		</script>
-	</body>
-	</html>
+
+	$("#alertSucess").delay( 3500 ).fadeOut( 400 );
+	$("#alertDanger").delay( 3500 ).fadeOut( 400 );
+
+
+</script>
+</body>
+</html>
