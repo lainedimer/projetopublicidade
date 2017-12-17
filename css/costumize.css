@@ -38,7 +38,7 @@
 .fonte-sobre{
 	color:#ff4a1b !important;
 	margin-top:3%;
-	text-shadow: 2px 2px 0px #000000;
+	text-shadow: 1px 2px 0px #545454;
 }
 .fundo-branco{
 	background-color: #FFFFFF;
@@ -110,7 +110,6 @@
 .img-margem-direita{
 	margin-right: 5px;
 }
-.texto-menu{color: #1C1C1C; text-decoration: none !important;}
 .texto-menu:hover{text-decoration: none !important;}
 .fundo-branco{
 	backgrouposition: relative;nd: #ffffff;
@@ -196,6 +195,7 @@ a[href="#top"]:visited{
 
 .enviar:hover{
 	background-color: #b2b2b2 !important;
+	color: #FFFFFF !important;
 }
 .menu-fonte:hover{
 	background-color: inherit !important;
@@ -204,3 +204,8 @@ a[href="#top"]:visited{
 	text-align: center;
 	padding: 2px;
 }
+
+a:link, a:visited {
+	text-decoration: none !important;
+	background-color: inherit !important;
+	}
