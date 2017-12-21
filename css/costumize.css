@@ -3,6 +3,7 @@
 *{
 	padding:0;
 	margin: 0 auto;
+	ma
 }
 .container-all{
 	position:absolute;
@@ -25,7 +26,7 @@
 	background-size: cover;
 	width:100%; 
 	height:0;
-	min-height:100%;	
+	/*min-height:100%;*/	
 	background-repeat: no-repeat;
 	background-position: center !important;
 }
@@ -80,7 +81,7 @@
 }
 
 .jumb-margem{
-	margin-top: -3%;"
+	margin-top: -3%;
 }
 .sombra{
 	box-shadow: 0px 2px 0px #363636;
@@ -89,9 +90,10 @@
 }
 #imagem-principal{
 	background-image: url(../fundo/home.jpg)!important; 
- 	background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 
 #margem-texto{
@@ -208,4 +210,4 @@ a[href="#top"]:visited{
 a:link, a:visited {
 	text-decoration: none !important;
 	background-color: inherit !important;
-	}
+}
