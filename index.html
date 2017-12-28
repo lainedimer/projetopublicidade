@@ -15,7 +15,7 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	<link rel="shortcut icon" href="logo/favicon.ico" />
+	<link rel="shortcut icon" href="logo/favicon.ico"/>
 	<div class="container-all">
 		<div class="jumbotron jumb-fluid" id="imagem-principal" style="margin-top:0.01%;margin-bottom:3%;">
 			<div class="container-fluid" style="color:#FFF;">
@@ -46,7 +46,7 @@
 					<div style="position: absolute;top: 50%;left: 50%; transform: translateY(-10%) translateX(-50%);">
 						<ul style="list-style-type: none;">
 							<li>
-								<a href="#portfolio" class="texto-menu btn btn-default fonte-open alinhar-centro" style="background-color: transparent; border-radius: 30px; color:#FFF;font-size: 26px; text-decoration: none !important; ">Quem acredita em nós  <span class="glyphicon glyphicon-menu-down"></span></a>
+								<a href="#portfolio" class="hidden-xs texto-menu btn btn-default fonte-open alinhar-centro" style="background-color: transparent; border-radius: 30px; color:#FFF;font-size: 26px; text-decoration: none !important; ">Quem acredita em nós  <span class="glyphicon glyphicon-menu-down"></span></a>
 							</li>
 						</ul>
 					</div>	
@@ -56,10 +56,10 @@
 
 		<div class="jumbotron jumb-fluid jumb-margem" style="background-color: #FFF;">
 			<div id="sobre">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row fonte-sobre fonte-one">
 						<p class="hidden-xs size-62">Sobre a Tauti</p> 
-						<p class="visible-xs" id="font-36">Sobre a Tauti</p>
+						<p class="visible-xs size-36">Sobre a Tauti</p>
 					</div>
 					<div class="row fonte-open" id="margem-sobre">
 						<p class="hidden-xs size-28 text-justify">A Tauti é uma agência de comunicação que acredita no poder das ideias e de como elas podem transformar o mundo.</br> Fundada em 2015, com uma proposta diferenciada de atender poucas marcas,atua no ambiente de cada um dos seus clientes visando um serviço mais humanizado e que esteja profundamente envolvido no processo de cada negócio. Um modelo de atendimento ancorado na amizade e que busca a integração cada vez mais positiva das marcas com seus clientes.</p>
@@ -69,13 +69,12 @@
 							<footer>Michel Foucault</footer>
 						</blockquote>
 					</div>
-
 				</div>
 			</div>
 		</div>	
 		<div id="portfolio">	
-			<div class="jumbotron jumb-logo jumb-fluid jumb-margem">
-				<div class="container-fluid" style="margin-top: -10%">
+			<div class="jumbotron jumb-logo">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="main col-md-3">
 							<img class="portifolio" src="trab/Espaço Paula Matos.png">						
@@ -133,13 +132,19 @@
 						<div class="main col-md-3">
 							<img class="portifolio" src="trab/Eliane.png">
 						</div>
+						<div class="main col-md-3">
+							<img class="portifolio" src="trab/RosaSul.png">
+						</div>
+						<div class="main col-md-3">
+							<img class="portifolio" src="trab/Iemes.png">
+						</div>
 
 					</div>
-				</div> 
+				</div>
 			</div>
 		</div>
 
-		<div class="jumbotron jumb-fluid jumb-margem" style="background-color: #e8e8e8; margin-bottom: 0px !important;">
+		<div class="jumbotron jumb-fluid jumb-margem" style="background-color: #e8e8e8;">
 			<div id="contato">
 				<div class="container-fluid" style="background-color: #e8e8e8;">
 
@@ -155,61 +160,61 @@
 					</div>
 					<?php } ?>
 					<div class="row fonte-one alinhar-centro fonte-sobre" style="margin-left: 3%; margin-top: 5%;">
-						<p class="hidden-xs size-62">Contato</p> 
-						<p class="fonte-sobre visible-xs" id="font-36" style="margin-top: 20%;">Contato</p>
+						<p class="hidden-xs size-62" style="margin-top: 5%;" >Contato</p> 
+						<p class="fonte-sobre visible-xs size-36" style="margin-top: 14%;">Contato</p>
 					</div>
 					<div class="center-form">
-						<div class="center-form" style="width: 80%;">
-							<form class="form-horizontal style-3" action="email.php" method="post" style=" color:#FFF; margin: 0 auto;">
-									<div class="form-group">
-										<input required class="form-control input-form"  id="nome" name="nome" type="text" placeholder="Nome*"/>
-									</div>
-									<div class="form-group">
-										<input required class="form-control input-form"  id="email" name="email" type="text" placeholder="E-mail*"/>
-									</div>
-									<div class="form-group">
-										<textarea required class="input-form form-control " rows="3" id="msg" name="msg" placeholder="Mensagem*"></textarea>
-									</div>
-									<button type="submit" id="btn-enviar" class="btn btn-default fonte-open enviar" style="float: right; margin-right: -1%; color: #b2b2b2; background-color: transparent; border-radius: 20px; font-size: 26px; text-decoration: none !important; width: 200px;">Enviar</button>
+						<div class="center-form" style="margin-top: -10%;">
+							<form class="form-horizontal style-3" action="email.php" method="post" style=" color:#FFF; margin: 0 auto; width: 60%;">
+								<div class="form-group">
+									<input required class="form-control input-form"  id="nome" name="nome" type="text" placeholder="Nome*"/>
+								</div>
+								<div class="form-group">
+									<input required class="form-control input-form"  id="email" name="email" type="text" placeholder="E-mail*"/>
+								</div>
+								<div class="form-group">
+									<textarea required class="input-form form-control " rows="3" id="msg" name="msg" placeholder="Mensagem*"></textarea>
+								</div>
+								<button type="submit" id="btn-enviar" class="btn btn-default fonte-open enviar hidden-xs" style="float: right; margin-right: -1%; color: #b2b2b2; background-color: transparent; border-radius: 20px; font-size: 26px; text-decoration: none !important; width: 200px;">Enviar</button>
+								<button type="submit" id="btn-enviar" class="btn btn-sm fonte-open enviar visible-xs" style="float: right; margin-right: -1%; color: #b2b2b2; background-color: transparent; border-radius: 20px; font-size: 26px; text-decoration: none !important;">Enviar</button>								
 							</form>
 						</div>
 					</div>
 				</div>						
 			</div>
-		</div>
+			<div class=" footer" style="background-color: #e8e8e8;">	
+				<h6 class="alinhar-centro" style="color:#919191;">Todos os direitos reservados. Tauti 2017</h6></br>
+				<h6 class="alinhar-centro" style="color:#b2b2b2; margin-top: 0px !important">Laíne Dimer</h6>	
+			</div>
+		</div>				
 		<a href="#top" class="glyphicon glyphicon-menu-up font-laranja"></a>
-		<div class=" footer" style="background-color: #e8e8e8; bottom:0px !important;left:0px !important; margin-bottom: 0px !important;">	
-			<h6 class="alinhar-centro" style="color:#919191;">Todos os direitos reservados. Tauti 2017</h6></br>
-			<h6 class="alinhar-centro" style="color:#b2b2b2; margin-top: 0px !important">Laíne Dimer</h6>	
-		</div>
-
 	</div>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/9e336562d9.js"></script>
 	<script src="js/smoth.js"></script>
-</script>
-<script>
-	$(document).ready(function(){
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 100) {
-				$('a[href="#top"]').fadeIn();
-			} else {
-				$('a[href="#top"]').fadeOut();
-			}
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('a[href="#top"]').fadeIn();
+				} else {
+					$('a[href="#top"]').fadeOut();
+				}
+			});
+
+			$('a[href="#top"]').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
 		});
 
-		$('a[href="#top"]').click(function(){
-			$('html, body').animate({scrollTop : 0},800);
-			return false;
-		});
-	});
 
 
+		$("#alertSucess").delay( 3500 ).fadeOut( 500 );
+		$("#alertDanger").delay( 3500 ).fadeOut( 500 );
 
-	$("#alertSucess").delay( 3500 ).fadeOut( 500 );
-	$("#alertDanger").delay( 3500 ).fadeOut( 500 );
 
-
-</script>
+	</script>
 </body>
 </html>
