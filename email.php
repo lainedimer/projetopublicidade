@@ -14,21 +14,21 @@ try {
     //Server settings
     $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->Host = 'mail.tauti.com.br';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'laainediimer@gmail.com';                 // SMTP username
-    $mail->Password = '';                           // SMTP password   
+    $mail->Username = 'tauti@tauti.com.br';                 // SMTP username
+    $mail->Password = 'admintauti2018';                           // SMTP password   
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('laainediimer@gmail.com','');   // Add a recipient
-    $mail->addAddress('laainediimer@gmail.com','');               // Name is optional
+    $mail->setFrom('tauti@tauti.com.br','');   // Add a recipient
+    $mail->addAddress('tauti@tauti.com.br','');               // Name is optional
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = $msg;
-    $mail->AltBody = $msg;
+    $mail->Subject = 'Fale conosco (tauti.com.br)';
+    $mail->Body    = $msg."<br />\nEmitente: ".$email;
+    $mail->AltBody = $email;
 
     $mail->send();
     $enviado = 'Message has been sent';
