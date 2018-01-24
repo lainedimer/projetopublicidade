@@ -1,0 +1,10 @@
+[16-Jan-2018 15:22:03 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '[' in /home/canalcatar/public_html/tauti.com.br/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 284
+[16-Jan-2018 15:22:52 America/Sao_Paulo] PHP Notice:  Undefined index: nome in /home/canalcatar/public_html/tauti.com.br/email.php on line 3
+[16-Jan-2018 15:22:52 America/Sao_Paulo] PHP Notice:  Undefined index: email in /home/canalcatar/public_html/tauti.com.br/email.php on line 4
+[16-Jan-2018 15:22:52 America/Sao_Paulo] PHP Notice:  Undefined index: msg in /home/canalcatar/public_html/tauti.com.br/email.php on line 5
+[16-Jan-2018 15:22:52 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '[' in /home/canalcatar/public_html/tauti.com.br/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 284
+[16-Jan-2018 15:26:05 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '[' in /home/canalcatar/public_html/tauti.com.br/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 284
+[16-Jan-2018 15:26:45 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '[' in /home/canalcatar/public_html/tauti.com.br/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 284
+[16-Jan-2018 16:04:32 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '[' in /home/canalcatar/public_html/tauti.com.br/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 284
+[16-Jan-2018 16:24:39 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '[' in /home/canalcatar/public_html/tauti.com.br/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 284
+[17-Jan-2018 12:28:52 America/Sao_Paulo] PHP Notice:  Undefined variable: headers in /home/canalcatar/public_html/tauti.com.br/email.php on line 18
