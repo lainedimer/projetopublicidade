@@ -71,26 +71,20 @@
 .menu-ul-dec{list-style-type: none;}
 .texto-menu:hover{text-decoration: none !important;}
 /*sobre*/
-<<<<<<< HEAD
-.p-padding{padding: 8px;}
-=======
+
 .p-padding{padding: 4px;}
->>>>>>> b8913251eaaa7269b11c2cf5d67e64e3df62dbf6
+
 .sobre-margin{margin-bottom: 4%;}
 .fonte-sobre{
 	color:#ff4a1b !important;
 	margin-top:3%;
-<<<<<<< HEAD
 	text-shadow: 1px 1px 0px #545454;
 }
-=======
-	text-shadow: 1px 2px 0px #545454;
-}
+
 
 /*backgrounds*/
 .background-white{background-color: #FFFFFF;}
 
->>>>>>> b8913251eaaa7269b11c2cf5d67e64e3df62dbf6
 
 /*backgrounds*/
 .background-white{background-color: #FFFFFF;}
